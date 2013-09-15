@@ -1,5 +1,5 @@
 {
-  "name": "NorkWatch",
+  "name": "nork-watch",
   "version": "0.0.1",
   "description": "File/Directory monitor for Node.js based on fs.watch()",
   "repository": {
@@ -15,4 +15,7 @@
     "mocha": "*",
     "chai": "*"
   },
+  "dependencies" : {
+    "nork-hash": "~0.0.3"
+  }
 }
