@@ -1,10 +1,11 @@
 Work in progress.
 
 usage:
-var Watcher = require('NorkWatch');
-var path = require('path');
+var Tail = require('nork-tail');
 
-var w = Watcher('./tmp/*');
+Takes two arguments. path to a directory and a regexp for filtering file-names.
+
+var w = Tail('./tmp');
 
 w
   .on('error', function(err){
