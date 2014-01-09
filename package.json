@@ -7,15 +7,30 @@
     "url": "https://github.com/mneme/norkwatch.git"
   },
   "keywords": [
-    "fs.watch()","tail"
+    "fs.watch()",
+    "tail"
   ],
-   "main": "lib/watcher.js",
-  "author": "Mneme <mneme@gmail.com>",
+  "main": "lib/watcher.js",
+  "author": {
+    "name": "Mneme",
+    "email": "mneme@gmail.com"
+  },
   "devDependencies": {
     "mocha": "*",
     "chai": "*"
   },
-  "dependencies" : {
+  "dependencies": {
     "nork-hash": "~0.0.3"
-  }
+  },
+  "readme": "Work in progress.\r\n\r\nusage:\r\nvar Watcher = require('NorkWatch');\r\nvar path = require('path');\r\n\r\nvar w = Watcher('./tmp/*');\r\n\r\nw\r\n  .on('error', function(err){\r\n    console.log(err);\r\n  })\r\n  .on('data', function(data){\r\n    console.log(data);\r\n  })\r\n  .on('unwatch', function(file){\r\n    console.log('unwatching: ' + file);\r\n  })\r\n  .on('watch', function(file){\r\n    console.log('watching: ' + file);\r\n  })\r\n  .start();",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/mneme/norkwatch/issues"
+  },
+  "_id": "nork-tail@0.0.2",
+  "dist": {
+    "shasum": "5ddd9b236668b8fea144b70b15e69372efb7d1ce"
+  },
+  "_from": "nork-tail@~0.0.1",
+  "_resolved": "https://registry.npmjs.org/nork-tail/-/nork-tail-0.0.2.tgz"
 }
