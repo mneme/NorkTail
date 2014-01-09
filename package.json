@@ -1,6 +1,6 @@
 {
   "name": "nork-tail",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "File/Directory monitor for Node.js based on fs.watch()",
   "repository": {
     "type": "git",
